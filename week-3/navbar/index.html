@@ -2,54 +2,127 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/instructor.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/answer.css" />
     <title>navbar</title>
   </head>
-  <body>
-    <header>
-      <h1>Header</h1>
-      <h2>Responsive header</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam,
-        assumenda!
-      </p>
-    </header>
+  <body class="bg-secondary">
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Settings</a></li>
-      </ul>
+      <div class="navbar">
+        <div class="navmenu flex-end relative">
+          <span class="centered" id="tooltip-toggle">
+            En<i class="material-icons danger md-18 ">keyboard_arrow_down</i>
+          </span>
+          <span class="tooltip bg-fade danger" id="tooltip-menu">
+            <ul class="tooltip-menu">
+              <li class="active">English</li>
+              <li>German</li>
+              <li>Russian</li>
+            </ul>
+          </span>
+        </div>
+
+        <ul class="navmenu">
+          <li class="navitem"><a href="#">MODELS</a></li>
+          <li class="navitem"><a href="#">OFFERS</a></li>
+          <li class="navitem"><a href="#">SERVICE</a></li>
+          <li class="navitem"><a href="#">DEALERS</a></li>
+        </ul>
+
+        <div class="navmenu navlogo">
+          <a
+            target="_blank"
+            href="https://dribbble.com/shots/6904922-Citroen-C3-Promo-Page-Concept/attachments/1467405"
+            ><img src="./assets/images/logo.png" alt=""
+          /></a>
+        </div>
+
+        <ul class="navmenu">
+          <li class="navitem"><a href="#">NEWS</a></li>
+          <li class="navitem"><a href="#">ABOUT CITROËN</a></li>
+          <li class="navitem"><a href="#">BUSNIESS TEAMS</a></li>
+        </ul>
+      </div>
+      <div class="searchbar">
+        <div class="card">
+          <i class="material-icons">search</i>
+        </div>
+      </div>
     </nav>
+
     <main>
-      <section class="row">
-        <article>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, fuga
-          molestias! Ab alias impedit maiores libero placeat! Ullam, natus
-          fugiat eius adipisci facilis eveniet odio in maxime dolor nisi
-          distinctio perferendis modi laudantium pariatur consequuntur neque
-          harum quas ratione doloremque quo nam. Veritatis quos doloribus,
-          laborum commodi placeat rerum iure!
-          <br />
-          <hr />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cum
-          animi qui magni laudantium totam dolor ab suscipit nihil sed ipsa
-          fugiat, praesentium ducimus, porro ad odit voluptatibus modi ullam!
-          Illum dolores expedita quaerat iste veritatis obcaecati molestias
-          facilis quidem consequatur? Reiciendis provident eaque nostrum
-          perferendis quis voluptatem ipsa error?
-        </article>
-        <aside>
-          <ul>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-          </ul>
-        </aside>
-      </section>
+      <span class="panel "></span>
     </main>
+
+    <footer>
+      <div class="info">
+        <ul>
+          <li>
+            <i class="material-icons danger">airline_seat_legroom_extra</i>
+            <div>
+              <span>
+                <b>188</b>
+                <small>km/H</small>
+              </span>
+              <br />
+              <span>Max Speed</span>
+            </div>
+          </li>
+          <li>
+            <i class="material-icons danger">build</i>
+            <div>
+              <span>
+                <b>122</b>
+                <small>H/P</small>
+              </span>
+              <br />
+              <span>Max Power</span>
+            </div>
+          </li>
+          <li>
+            <i class="material-icons danger">timer</i>
+            <div>
+              <span>
+                <b>10.6</b>
+                <small>Sec</small>
+              </span>
+              <br />
+              <span>0-100 km/h</span>
+            </div>
+          </li>
+          <li>
+            <i class="material-icons danger">waves</i>
+            <div>
+              <span>
+                <b>1.2</b>
+                <small>L</small>
+              </span>
+              <br />
+              <span>Capacity</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="video-panel bg-secondary">
+        <div class="mt-5">
+          <b class="block mb-2 primary">3RD GENERATION</b>
+          <small class="primary"
+            >This modern car stands out for its personality, incorporating both
+            well-being and current technology.
+          </small>
+        </div>
+        <div>
+          <span class="fab bg-secondary danger">
+            <i class="material-icons md-36">play_arrow</i>
+          </span>
+          <img src="./assets/images/thumbnail.png" />
+        </div>
+      </div>
+    </footer>
+    <script src="./script/app.js" defer></script>
+    <script></script>
   </body>
 </html>
