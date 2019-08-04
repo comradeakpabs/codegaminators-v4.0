@@ -1,14 +1,14 @@
-##Navbar Concept, Tooltip and Depth
+## Navbar Concept, Tooltip and Depth
 
 [Link to Original Design](https://dribbble.com/shots/6904922-Citroen-C3-Promo-Page-Concept/attachments/1467405)
 
-###Task
+### Task
 
 - Background panel image should be behind the car as shown in the original design. Please Fix.
 - Language tooltip caret is misaligned. Please Fix (Make Centered).
 - Bonus: Tooltip should close if user clicks on the body. require javascript >__0
 
-###Improvements
+### Improvements
 
 - Add more functionality.
   - Feature shown on the original design.
