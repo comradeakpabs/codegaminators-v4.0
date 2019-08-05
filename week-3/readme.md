@@ -2,7 +2,7 @@
 
 __including task and answers__
 
-	Image Gallery using flexbox
-	Article Site using float and clear
-
+	image-gallery: Simple Image Gallery using flexbox
+	float-and-clear: Simple Article Site using float and clear
+	navbar: Sample (Incomplete) Landing page site
 	
