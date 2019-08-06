@@ -1,0 +1,108 @@
+/* using local nunito font */
+@import url(../assets/fonts/Nunito-FontFace.css);
+@import url(../assets/icons/Material-Icon-FontFace.css);
+
+/* css reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+}
+
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* */
+
+:root {
+  --theme-dark: #1a191d;
+  --theme-danger: #e66464;
+  --theme-primary: #1b1b1b;
+  --theme-secondary: #f6f8fc;
+  --theme-shadow-dark: #1b1b1b0d;
+  --theme-shadow-light: #7474741c;
+  --theme-shadow-fade: #74747475;
+}
+
+.bg-dark {
+  background: var(--theme-dark);
+}
+
+.pv-05 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.ph-05 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.grid {
+  width: auto;
+  height: 100vh;
+  display: grid;
+  margin: 0 auto;
+  position: relative;
+  grid-row-gap: 0.3rem;
+  grid-column-gap: 0.3rem;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, calc(100% / 4 - 0.3rem));
+}
+
+.card {
+  border: none;
+  border-radius: 0.1rem;
+  transition: all 0.3s cubic-bezier(0.003, 0.0001, 0.001, 0.001);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.modal {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: absolute;
+}
+
+.modal.active {
+  display: block;
+}
+
+.modal img {
+  width: 700px;
+  height: 500px;
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, calc(100% / 3 - 0.3rem));
+  }
+}
+
+@media all and (max-width: 450px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, calc(100% / 2 - 0.3rem));
+  }
+}

@@ -1,0 +1,19 @@
+.row > * {
+  width: calc(100% / 3.5);
+  float: left;
+  display: block;
+  height: auto;
+}
+
+.row::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .row > * {
+    float: none;
+    width: 100%;
+  }
+}
